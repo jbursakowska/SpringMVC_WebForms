@@ -1,25 +1,39 @@
-<html>
-<head>
-<title>Spring MVC Tutorial by Crunchify - Hello World Spring MVC
-	Example</title>
-<style type="text/css">
-body {
-	background-image: url('http://crunchify.com/bg.png');
-}
-</style>
-</head>
-<body>${message}
- 
-	<br>
-	<br>
-	<div style="font-family: verdana; padding: 10px; border-radius: 10px; font-size: 12px; text-align:center;">
- 
-		Spring MCV Tutorial by <a href="http://crunchify.com">Crunchify</a>.
-		Click <a
-			href="http://crunchify.com/category/java-web-development-tutorial/"
-			target="_blank">here</a> for all Java and <a
-			href='http://crunchify.com/category/spring-mvc/' target='_blank'>here</a>
-		for all Spring MVC, Web Development examples.<br>
-	</div>
-</body>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  
+	<%-- <%@ include file="spring-url.jsp" %> --%>
+	<spring:url value="/resources/css/bootstrap.css" var="bootstrap_css" />
+  	<spring:url value="/resources/css/font-awesome.css" var="fa_css" />
+  	<spring:url value="/resources/js/bootstrap.js" var="bootstrap_js" />
+  	
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="${bootstrap_css}" rel="stylesheet">
+    <link href="${fa_css}" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  
+  <body>
+    <h1>${message}</h1>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="${bootstrap_js}"></script>
+  </body>
+  
 </html>
