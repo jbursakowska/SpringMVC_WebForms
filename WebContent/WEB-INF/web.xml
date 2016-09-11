@@ -3,7 +3,7 @@
   <display-name>CrunchifySpringMVCTutorial</display-name>
   
   <welcome-file-list>
-    <welcome-file>welcome.jsp</welcome-file>
+    <welcome-file>form.jsp</welcome-file>
   </welcome-file-list>
   
     <servlet>
@@ -16,8 +16,8 @@
     
     <servlet-mapping>
         <servlet-name>crunchify</servlet-name>
-        <url-pattern>/welcome.jsp</url-pattern>
-        <url-pattern>/welcome.html</url-pattern>
+        <url-pattern>/form.jsp</url-pattern>
+        <url-pattern>/form.html</url-pattern>
         <url-pattern>*.html</url-pattern>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
