@@ -3,7 +3,7 @@
   <display-name>CrunchifySpringMVCTutorial</display-name>
   
   <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>welcome.jsp</welcome-file>
   </welcome-file-list>
   
     <servlet>
