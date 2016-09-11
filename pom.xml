@@ -81,6 +81,13 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
     		<version>2.1.4.RELEASE</version>
 		</dependency>
 		
+		<dependency>
+     		<groupId>net.sourceforge.nekohtml</groupId>
+     		<artifactId>nekohtml</artifactId>
+     	<version>1.9.21</version>
+     	
+ </dependency>
+		
 	</dependencies>
   
 </project>
