@@ -1,4 +1,4 @@
-package com.web;
+package com.yolonerds.web;
 
 public class FormModel {
 	
