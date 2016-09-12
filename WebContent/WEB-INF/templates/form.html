@@ -24,23 +24,46 @@
  	</head>
  
  	<body>
- 	
+	 	
 	 	<div class="container"> 
 	 	
 	   		<div class="page-header">
 	  			<h1>Subscribe to BowHunting Magazine</h1>
 			</div>
 			
-			<form action="#" th:action="@{/form}" th:object="${formModel}" method="post">		
+			<form action="#" th:action="@{/form}" th:object="${form}" method="post">
+			
+				<div class="hidden">
+ 					<input type="text" th:field="*{formId}" value="1" readonly>
+ 				</div>	
+ 					
 				<div class="form-group">
 					<label class="control-label" for="exampleInputEmail1">Email address</label> 
 					<input type="email" th:field="*{email}" class="form-control" id="exampleInputEmail1" placeholder="Email">
 				</div>
+				
 				<div class="form-group">
-					<label for="exampleInputPassword1">Password</label> 
+					<label class="control-label" for="exampleInputPassword1">Password</label> 
 					<input type="password" th:field="*{password}" class="form-control" id="exampleInputPassword1" placeholder="Password">
 				</div>
+				
+				<div class="form-group">
+					<label class="control-label" for="exampleInputPassword2">Confirm Password</label> 
+					<input type="password" th:field="*{password2}" class="form-control" id="exampleInputPassword2" placeholder="Confirm Password">
+				</div>
+				
+				<div class="form-group">
+					<label class="control-label" for="firstName">First Name</label> 
+					<input type="text" th:field="*{firstName}" class="form-control" id="firstName" placeholder="First Name">
+				</div>
+				
+				<div class="form-group">
+					<label class="control-label" for="lastName">Last Name</label> 
+					<input type="text" th:field="*{lastName}" class="form-control" id="lastName" placeholder="Last Name">
+				</div>
+				
 				<button type="submit" class="btn btn-default">Submit</button>
+				
 			</form>
 			
 		</div>
