@@ -24,7 +24,7 @@ public class FormController {
 	@GetMapping("/form")
 	public String getForm(Model model) {
  
-		model.addAttribute("formModel", new WebFormModel());
+		model.addAttribute("form", new WebFormModel());
 		
 		return "form";
 	}

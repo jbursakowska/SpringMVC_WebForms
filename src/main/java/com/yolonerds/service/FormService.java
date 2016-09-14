@@ -13,27 +13,25 @@ public class FormService implements IFormService {
 	}
 
 	public void submitForm(WebFormModel model) {
-		// TODO Auto-generated method stub
 		
 	}
 
 	public DBSubmissionModel createDBSubmissionModel(WebFormModel model) {
-		// TODO Auto-generated method stub
+
 		return null;
 	}
 
 	public DBSubmissionModel insertDBSubmissionModel(DBSubmissionModel model) {
-		// TODO Auto-generated method stub
+
 		return null;
 	}
 
 	public List<DBFormQuestionModel> createDBFormQuestionModels(WebFormModel model) {
-		// TODO Auto-generated method stub
+
 		return null;
 	}
 
 	public void insertDBFormQuestionModels(List<DBFormQuestionModel> list) {
-		// TODO Auto-generated method stub
 		
 	}
 	
