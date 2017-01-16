@@ -30,53 +30,35 @@
 	  			<h1>BowHunting Magazine - Create Account</h1>
 			</div>
 			
-			<form action="#" th:action="@{/form}" method="post">
+			<form action="#" th:action="@{/form}" th:object="${WebFormModel}" method="post">
 			
 				<div class="hidden">
- 					<input type="text" name="formId" value="1" readonly>
+ 					<input type="text" th:field="*{formId}" value="1" readonly>
  				</div>	
  					
 				<div class="form-group">
 					<label class="control-label" for="exampleInputEmail1">Email address</label> 
-					<input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
-					<div class="help-block with-errors"></div>
+					<input type="email" th:field="*{email}" class="form-control" id="exampleInputEmail1" placeholder="Email">
 				</div>
 				
 				<div class="form-group">
 					<label class="control-label" for="exampleInputPassword1">Password</label> 
-					<input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
-					<div class="help-block with-errors"></div>
+					<input type="password" th:field="*{password}" class="form-control" id="exampleInputPassword1" placeholder="Password">
 				</div>
 				
 				<div class="form-group">
 					<label class="control-label" for="exampleInputPassword2">Confirm Password</label> 
-					<input type="password" name="password2" class="form-control" id="exampleInputPassword2" placeholder="Confirm Password" data-match="#exampleInputPassword1" data-match-error="Passwords do not match" required>
-					<div class="help-block with-errors"></div>
+					<input type="password" th:field="*{password2}" class="form-control" id="exampleInputPassword2" placeholder="Confirm Password">
 				</div>
 				
 				<div class="form-group">
 					<label class="control-label" for="firstName">First Name</label> 
-					<input type="text" name="firstName" class="form-control" id="firstName" placeholder="First Name" required>
-					<div class="help-block with-errors"></div>
+					<input type="text" th:field="*{firstName}" class="form-control" id="firstName" placeholder="First Name">
 				</div>
 				
 				<div class="form-group">
 					<label class="control-label" for="lastName">Last Name</label> 
-					<input type="text" name="lastName" class="form-control" id="lastName" placeholder="Last Name" required>
-					<div class="help-block with-errors"></div>
-				</div>
-				
-				<!-- Handlebars checkbox list template will be appended here -->
-				
-				<!-- Thymeleaf checkbox list template will be appended here -->
-				
-				<p class="help-block">What is your job title?.</p>
-    			
-				<div th:each="checkbox : ${list}" class="checkbox">
-  					<label th:text="${checkbox.label}">
-	    				<input type="checkbox" value="${checkbox.value}">
-	    				
-  					</label>
+					<input type="text" th:field="*{lastName}" class="form-control" id="lastName" placeholder="Last Name">
 				</div>
 				
 				<button type="submit" class="btn btn-default">Submit</button>
@@ -87,15 +69,8 @@
 
     	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    	
     	<!-- Include all compiled plugins (below), or include individual files as needed -->
-    	<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.js"></script>
-    	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
-    	
     	<script th:src="@{/resources/js/bootstrap.js}"></script>
-    	<script th:src="@{/resources/js/customscript.js}"></script>
-    	
- 		<div th:replace="fragments/formElements :: formElements"></div>   	
   	</body>
   
 </html>

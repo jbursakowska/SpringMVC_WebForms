@@ -18,3 +18,10 @@ h1 {
 	font-family: 'Fjalla One', sans-serif;
 	font-size: 3.8em;
 }
+
+/* bs overrides */
+
+.form-group.has-success {
+	color: #36FF4B;
+	border-color: #36FF4B;
+}

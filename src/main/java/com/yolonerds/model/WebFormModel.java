@@ -10,6 +10,19 @@ public class WebFormModel {
 	private String firstName;
 	private String lastName;
 	
+	public WebFormModel(){
+		
+	}
+	
+	public WebFormModel(int formId, String email, String password, String password2, String firstName, String lastName){
+		this.formId = formId;
+		this.email = email;
+		this.password = password;
+		this.password2 = password2;
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+	
 	public int getFormId() {
 		return formId;
 	}
