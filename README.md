@@ -1,5 +1,5 @@
 # WebForms - A Spring MVC technology demo
-PizzaShack is a Eclipse Nano project that allows to display web forms as well as capture data from form submissions.
+SpringMVC_WebForms is a Eclipse Nano project that allows to display web forms as well as capture data from form submissions.
 
 ## Contents
 
